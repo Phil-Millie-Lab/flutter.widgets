@@ -492,7 +492,7 @@ class _ScrollablePositionedListState extends State<ScrollablePositionedList>
       index = widget.itemCount - 1;
     }
     setState(() {
-      primary.scrollController.jumpTo(0);
+      primary.scrollController.jumpTo(-100);
       primary.target = index;
       primary.alignment = alignment;
     });
